@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="14.20" multi-file="no" uid="simp487773add30644dc94708f3dde05627b" creation-date="04/10/2024 02:19:06">
+  <meta>
+    <name>GUI</name>
+    <authors>Eslam Mohamed</authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="ui-window" type="Window" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-label" type="Label" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-drop-down-button" type="Drop Down Button" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="element-detail" type="Element Detail" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-grid" type="Grid" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-button" type="Button" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-text-box" type="Text Box" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-radio-button" type="Radio Button" />
+        <value>1</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="ui-window" type="Window" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-label" type="Label" />
+        <value>4</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-drop-down-button" type="Drop Down Button" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="element-detail" type="Element Detail" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="comment-connector" type="Comment Connector" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="comment" type="Comment" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-grid" type="Grid" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-button" type="Button" />
+        <value>4</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-text-box" type="Text Box" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="ui-radio-button" type="Radio Button" />
+        <value>2</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.Wireframing.UserInterfaceDiagram</type>
+        <value>2</value>
+      </counter>
+    </diagrams>
+    <fields />
+  </counters>
+  <alias-groups />
+  <management uid="md-cde4f18a61524bc6acd784d96ac75e3d" name="" task-id-sequence="0">
+    <persons>
+      <person id="">
+        <first-name>Eslam</first-name>
+        <last-name>Mohamed</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-349f1c97a8a24dfda4efce5360bc03bb" name="" order-index="-1" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types />
+    </custom-types>
+  </types>
+  <items>
+    <item id="98e0734109ed4ebaa1403bf04a5e0860" cid="TXT001" type="ui-text-box" name="priority" owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:34:21">
+      <text-box />
+    </item>
+    <item id="a75ae47a7fe04a4ca06a31f77d31acac" cid="TXT001" type="ui-text-box" name="priority" owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:34:21">
+      <text-box />
+    </item>
+    <item id="278dc50353714dc7886a37d54b4d4579" cid="TXT001" type="ui-text-box" name="priority" owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:34:21">
+      <text-box />
+    </item>
+    <item id="bcfaaf1083b94def8c24aaba8c45ea74" cid="TXT001" type="ui-text-box" name="Time" owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:34:21">
+      <text-box />
+    </item>
+    <item id="84d19d5a0874452098b4c16755e88f5a" cid="TXT001" type="ui-text-box" name="time" owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:34:21">
+      <text-box />
+    </item>
+    <item id="e0bbdfcc23a04d34b1a14e21cc111a26" cid="LBL003" type="ui-label" name="ArrivalTime" owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:33:45" />
+    <item id="e48b1fbb0ad04f12bbd2a2cb7c2fbf65" cid="LBL003" type="ui-label" name="burst " owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:33:45" />
+    <item id="daba74b4b1124014a92f1e1183067568" cid="LBL003" type="ui-label" name="priority" owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:33:45" />
+    <item id="a55f1fd19d844d40ae785cd83897286f" cid="LBL003" type="ui-label" name="ArrivalTime" owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:33:45" />
+    <item id="781ff084b8664788af483f3f8445959e" cid="TXT001" type="ui-text-box" name="Name" owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:34:21">
+      <text-box />
+    </item>
+    <item id="c8111343eb9544debb944e562d880e3f" cid="LBL003" type="ui-label" name="burst " owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:33:45" />
+    <item id="fcb4d41579cb46a79441f9484a5fbb11" cid="RB001" type="ui-radio-button" name="delete process" owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:37:24">
+      <radio-button checked="true" />
+    </item>
+    <item id="1408af16966b4a70827e44a81a157d57" cid="LBL003" type="ui-label" name="process" owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:33:45" />
+    <item id="2eaa947ed4b144b19aed5e3ce344c00b" cid="TXT001" type="ui-text-box" name="Time" owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:34:21">
+      <text-box />
+    </item>
+    <item id="ccf2e4a100b948d4bbe829bc3a627588" cid="TXT001" type="ui-text-box" name="Name" owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:34:21">
+      <text-box />
+    </item>
+    <item id="fb1d6f246c20408a89f06004da44095d" cid="LBL003" type="ui-label" name="burst " owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:33:45" />
+    <item id="c371ee2cf4364cb498e78a3e18d65fd7" cid="RB001" type="ui-radio-button" name="delete process" owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:37:24">
+      <radio-button checked="true" />
+    </item>
+    <item id="5a24bf3344fd4a0dbc6f24b13e613205" cid="TXT001" type="ui-text-box" name="time" owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:34:21">
+      <text-box />
+    </item>
+    <item id="a0f20bf5cf6646e0b19773b36a56b5ed" cid="LBL003" type="ui-label" name="process" owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:33:45" />
+    <item id="e65cf5d2687148049860d397f082b37b" cid="TXT001" type="ui-text-box" name="Time" owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:34:21">
+      <text-box />
+    </item>
+    <item id="55d8b3172c004096b94964bdcbaa07af" cid="TXT001" type="ui-text-box" name="time" owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:34:21">
+      <text-box />
+    </item>
+    <item id="0d115139225b4a629f8478252baa4bd3" cid="LBL003" type="ui-label" name="priority" owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:33:45" />
+    <item id="efd8e4564ec7469abbe37d769d463bbd" cid="LBL003" type="ui-label" name="priority" owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:33:45" />
+    <item id="18950df2fa64470ca17f905949d78e0c" cid="LBL003" type="ui-label" name="ArrivalTime" owner="3c5e8b264c4e4739a501857539b5f4ea" creation-date="04/10/2024 02:33:45" />
+  </items>
+  <models>
+    <model id="p0cc758bf42d74db38b4db0943938ddcf_864186927" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>04/10/2024 02:19:19</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="user-interface" id="p14f6825843354d988dbef2d632e0bd19_959135096" name="start Window" order-index="1" uid="" auto-routed-paths="false" default-line-style="default" view-location="-147,27">
+        <size width="1" height="1" unit="px" type="ExpandableRightDown" />
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>04/10/2024 02:19:19</creation-date>
+          <change-date>04/10/2024 02:38:04</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="8267d09d87dd49978c54cccd0b0af526" cid="BTN001" type="ui-button" name="confirm" owner="3c5e8b264c4e4739a501857539b5f4ea" creator="" creation-date="04/10/2024 02:25:40">
+            <button />
+          </item>
+          <item id="deb6391675be4b3e8c188647e5718783" cid="BTN003" type="ui-button" name="add process" owner="3c5e8b264c4e4739a501857539b5f4ea" creator="" creation-date="04/10/2024 02:38:04">
+            <button />
+          </item>
+          <item id="30fcad7a8ccd437e9daa470bfef1257f" cid="LBL002" type="ui-label" name="&lt;&lt;Page Title&gt;&gt;" owner="3c5e8b264c4e4739a501857539b5f4ea" creator="" creation-date="04/10/2024 02:26:50" />
+          <item id="24f56bcc127243b5b36928565cb5b9d1" cid="BTN002" type="ui-button" name="Reset" owner="3c5e8b264c4e4739a501857539b5f4ea" creator="" creation-date="04/10/2024 02:25:49">
+            <button />
+          </item>
+          <item id="24daca4b7f154b95b78bf86f86ced4a6" cid="LBL001" type="ui-label" name="Choose Algo:" owner="3c5e8b264c4e4739a501857539b5f4ea" creator="" creation-date="04/10/2024 02:20:47" />
+          <item id="97eaca692bd1450494eb8e54bc54c3bf" cid="RB001" type="ui-radio-button" name="delete process" owner="3c5e8b264c4e4739a501857539b5f4ea" creator="" creation-date="04/10/2024 02:37:24">
+            <radio-button checked="true" />
+          </item>
+          <item id="c95215db66e04ce2821eebe895f4d56d" cid="DD001" type="ui-drop-down-button" name="list of all algo" owner="3c5e8b264c4e4739a501857539b5f4ea" creator="" creation-date="04/10/2024 02:21:05" />
+          <item id="a2eea5d5c11b42c4a16a9b2f2f0acab7" cid="LBL003" type="ui-label" name="process" owner="3c5e8b264c4e4739a501857539b5f4ea" creator="" creation-date="04/10/2024 02:33:45" />
+          <item id="26f09b19bf5a4921b79904643ccc37ad" cid="TXT001" type="ui-text-box" name="Name" owner="3c5e8b264c4e4739a501857539b5f4ea" creator="" creation-date="04/10/2024 02:34:21">
+            <text-box />
+          </item>
+          <item id="3c5e8b264c4e4739a501857539b5f4ea" cid="WND001" type="ui-window" name="Window1" creator="" creation-date="04/10/2024 02:19:22">
+            <owned-items />
+            <window show-min-button="true" show-max-button="true" show-close-button="true" show-size-grip="false" />
+          </item>
+          <item id="baa276c0f6864fdeb0a4a221b30401e5" cid="GRD001" type="ui-grid" name="Grid1" owner="3c5e8b264c4e4739a501857539b5f4ea" creator="" creation-date="04/10/2024 02:23:38">
+            <grid>
+              <columns>
+                <column id="uigc-8b91973a-d2d2-4f34-8c47-a853cb96a5f3" name="p name" />
+                <column id="uigc-7068c8ba-5f6c-4957-881a-b44e6ac3ea1d" name="p arrival time" />
+                <column id="uigc-0b62f26a-f930-484a-9f5d-88747ddacb4f" name="p burst time" />
+                <column id="uigc-9221bc6e-4cf3-4432-a9f3-74efbaf805f1" name="p priotiy (Optional)" />
+              </columns>
+            </grid>
+          </item>
+        </abstract-items>
+        <layer id="e00a29e8e56a416e9a1b1a52374c31da" name="Default" visible="true" enabled="true" locked="false">
+          <item id="3c5e8b264c4e4739a501857539b5f4ea" iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:19:22" order-index="0" type="ui-window">
+            <layout ax="36" ay="22" awidth="855" aheight="573" x="36" y="22" width="855" height="573" expanded="36,22,855,573" collapsed="0,0,0,0" />
+          </item>
+          <item id="24daca4b7f154b95b78bf86f86ced4a6" iid="eeb182cfc61f42d488532c2d976842ed" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:20:47" order-index="1" type="ui-label">
+            <layout ax="465.5" ay="163.5" awidth="196" aheight="61" x="647.5" y="163.5" width="196" height="61" />
+          </item>
+          <item id="8267d09d87dd49978c54cccd0b0af526" iid="c8af53b61ada46a99c404d661774a30c" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:25:40" order-index="4" type="ui-button">
+            <layout ax="262.5" ay="485.25" awidth="125" aheight="58" x="444.5" y="485.25" width="125" height="58" />
+          </item>
+          <item id="24f56bcc127243b5b36928565cb5b9d1" iid="35ed4f570c2b4fdfa008e6f85d45d22d" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:25:49" order-index="5" type="ui-button">
+            <layout ax="435.5" ay="485.25" awidth="143.5" aheight="58" x="617.5" y="485.25" width="143.5" height="58" />
+          </item>
+          <item id="30fcad7a8ccd437e9daa470bfef1257f" iid="94c59edcac1b4d73aded6c3577756b30" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:26:50" order-index="6" type="ui-label">
+            <layout ax="116" ay="155" awidth="335" aheight="78" x="116" y="155" width="335" height="78" />
+          </item>
+          <item id="a2eea5d5c11b42c4a16a9b2f2f0acab7" iid="9f5a0d4203d14351b71c3f3f7fa21ac6" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:33:45" order-index="7" type="ui-label">
+            <layout ax="36" ay="280" awidth="78" aheight="34.5" x="218" y="280" width="78" height="34.5" />
+          </item>
+          <item id="26f09b19bf5a4921b79904643ccc37ad" iid="2fe102c8e80641439a321972c7d665ab" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:34:21" order-index="8" type="ui-text-box">
+            <layout ax="116" ay="287" awidth="78" aheight="27.5" x="298" y="287" width="78" height="27.5" />
+          </item>
+          <item id="c95215db66e04ce2821eebe895f4d56d" iid="35fd9559cc1a421bb7b935b6001d6b04" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:21:05" order-index="2" type="ui-drop-down-button">
+            <layout ax="648.5" ay="179" awidth="180" aheight="30" x="830.5" y="179" width="180" height="30" />
+          </item>
+          <item id="18950df2fa64470ca17f905949d78e0c" iid="d610097c67984411ad61f597d359f587" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:33:45" order-index="0" type="ui-label">
+            <layout ax="205" ay="282.75" awidth="99" aheight="36" x="271" y="282.75" width="78" height="34.5" />
+          </item>
+          <item id="e65cf5d2687148049860d397f082b37b" iid="118b7c5ebb264a1ea06eb393c0255be4" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:34:21" order-index="1" type="ui-text-box">
+            <layout ax="304" ay="286.75" awidth="78" aheight="28" x="370" y="286.75" width="78" height="27.5" />
+          </item>
+          <item id="0d115139225b4a629f8478252baa4bd3" iid="8ead0352041f41078f9df1d038ad1a2c" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:33:45" order-index="0" type="ui-label">
+            <layout ax="399" ay="283.25" awidth="78" aheight="34" x="465" y="283.25" width="78" height="34.5" />
+          </item>
+          <item id="98e0734109ed4ebaa1403bf04a5e0860" iid="a5b32efe6c6a4db3870b1d7c1f476ef3" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:34:21" order-index="1" type="ui-text-box">
+            <layout ax="479" ay="290.25" awidth="78" aheight="28" x="545" y="290.25" width="78" height="27.5" />
+          </item>
+          <item id="c8111343eb9544debb944e562d880e3f" iid="b344f0b0bd6441b88803624670080d25" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:33:45" order-index="0" type="ui-label">
+            <layout ax="579" ay="286.75" awidth="78" aheight="34" x="645" y="286.75" width="78" height="34.5" />
+          </item>
+          <item id="97eaca692bd1450494eb8e54bc54c3bf" iid="61ebc5ac882f4903a2c3fce242c1f725" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:37:24" order-index="9" type="ui-radio-button">
+            <layout ax="750" ay="289.75" awidth="118" aheight="36" x="816" y="289.75" width="11" height="17" />
+          </item>
+          <item id="84d19d5a0874452098b4c16755e88f5a" iid="f58bd686b7e445cc9b9377a6a4a8ce5f" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:34:21" order-index="1" type="ui-text-box">
+            <layout ax="659" ay="293.75" awidth="78" aheight="28" x="725" y="293.75" width="78" height="27.5" />
+          </item>
+          <item id="a0f20bf5cf6646e0b19773b36a56b5ed" iid="d16d672ca93745a18b3fff9facee2b32" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:33:45" order-index="0" type="ui-label">
+            <layout ax="36" ay="319" awidth="78" aheight="34" x="36" y="319" width="78" height="34.5" />
+          </item>
+          <item id="781ff084b8664788af483f3f8445959e" iid="b4b0866c72624c80b25e993c1d6b3d0f" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:34:21" order-index="1" type="ui-text-box">
+            <layout ax="116" ay="326" awidth="78" aheight="28" x="116" y="326" width="78" height="27.5" />
+          </item>
+          <item id="a55f1fd19d844d40ae785cd83897286f" iid="f0056097b0354fe7abb1b9696c42eb28" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:33:45" order-index="2" type="ui-label">
+            <layout ax="205" ay="322" awidth="99" aheight="36" x="205" y="322" width="78" height="34.5" />
+          </item>
+          <item id="bcfaaf1083b94def8c24aaba8c45ea74" iid="3489945217264ecd9d819ba973ab3e87" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:34:21" order-index="3" type="ui-text-box">
+            <layout ax="304" ay="326" awidth="78" aheight="28" x="304" y="326" width="78" height="27.5" />
+          </item>
+          <item id="efd8e4564ec7469abbe37d769d463bbd" iid="db31cbe162354fa28b903408890f19a3" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:33:45" order-index="4" type="ui-label">
+            <layout ax="399" ay="322" awidth="78" aheight="34" x="399" y="322" width="78" height="34.5" />
+          </item>
+          <item id="a75ae47a7fe04a4ca06a31f77d31acac" iid="4b5570689ec14e509e32565e5fd746ae" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:34:21" order-index="5" type="ui-text-box">
+            <layout ax="479" ay="329" awidth="78" aheight="28" x="479" y="329" width="78" height="27.5" />
+          </item>
+          <item id="fb1d6f246c20408a89f06004da44095d" iid="cd09e2396a834a70954fbd172f1fb4b5" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:33:45" order-index="6" type="ui-label">
+            <layout ax="579" ay="326" awidth="78" aheight="34" x="579" y="326" width="78" height="34.5" />
+          </item>
+          <item id="fcb4d41579cb46a79441f9484a5fbb11" iid="edc658a063f84387afe7f138606612fa" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:37:24" order-index="7" type="ui-radio-button">
+            <layout ax="750" ay="329" awidth="118" aheight="36" x="750" y="329" width="11" height="17" />
+          </item>
+          <item id="55d8b3172c004096b94964bdcbaa07af" iid="c52dddc714684bff978980a0a32285ae" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:34:21" order-index="8" type="ui-text-box">
+            <layout ax="659" ay="333" awidth="78" aheight="28" x="659" y="333" width="78" height="27.5" />
+          </item>
+          <item id="1408af16966b4a70827e44a81a157d57" iid="4a74337794c54bb69280b64a2b0de583" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:33:45" order-index="0" type="ui-label">
+            <layout ax="36" ay="367.75" awidth="78" aheight="34" x="36" y="367.75" width="78" height="34.5" />
+          </item>
+          <item id="ccf2e4a100b948d4bbe829bc3a627588" iid="41757c858f7840da9086901aea8fddd7" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:34:21" order-index="1" type="ui-text-box">
+            <layout ax="116" ay="374.75" awidth="78" aheight="28" x="116" y="374.75" width="78" height="27.5" />
+          </item>
+          <item id="e0bbdfcc23a04d34b1a14e21cc111a26" iid="6ea72d5e5854413b829cd75c346f4e0e" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:33:45" order-index="2" type="ui-label">
+            <layout ax="205" ay="370.75" awidth="99" aheight="36" x="205" y="370.75" width="78" height="34.5" />
+          </item>
+          <item id="2eaa947ed4b144b19aed5e3ce344c00b" iid="99a2ebb071b14e4da0559a12d7774920" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:34:21" order-index="3" type="ui-text-box">
+            <layout ax="304" ay="374.75" awidth="78" aheight="28" x="304" y="374.75" width="78" height="27.5" />
+          </item>
+          <item id="daba74b4b1124014a92f1e1183067568" iid="a0eba15e3b0747629c22035651341086" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:33:45" order-index="4" type="ui-label">
+            <layout ax="399" ay="370.75" awidth="78" aheight="34" x="399" y="370.75" width="78" height="34.5" />
+          </item>
+          <item id="278dc50353714dc7886a37d54b4d4579" iid="324374199ce041c8a8a153396a0a267c" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:34:21" order-index="5" type="ui-text-box">
+            <layout ax="479" ay="377.75" awidth="78" aheight="28" x="479" y="377.75" width="78" height="27.5" />
+          </item>
+          <item id="e48b1fbb0ad04f12bbd2a2cb7c2fbf65" iid="5a19a5ebb0424380bddd1df1036acfbf" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:33:45" order-index="6" type="ui-label">
+            <layout ax="579" ay="374.75" awidth="78" aheight="34" x="579" y="374.75" width="78" height="34.5" />
+          </item>
+          <item id="c371ee2cf4364cb498e78a3e18d65fd7" iid="e7853d7da8294ad390007e6f136ed082" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:37:24" order-index="7" type="ui-radio-button">
+            <layout ax="750" ay="377.75" awidth="118" aheight="36" x="750" y="377.75" width="11" height="17" />
+          </item>
+          <item id="deb6391675be4b3e8c188647e5718783" iid="60c216ef50974081b7be713c9d6cc477" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:38:04" order-index="10" type="ui-button">
+            <layout ax="52" ay="426.5" awidth="794" aheight="28" x="52" y="426.5" width="794" height="28" />
+          </item>
+          <item id="5a24bf3344fd4a0dbc6f24b13e613205" iid="ba4744c76fa4475c81c8036d0f67d401" container="3c5e8b264c4e4739a501857539b5f4ea" container-iid="9d535d5d5c69472683b611f99b45d457" creation-date="04/10/2024 02:34:21" order-index="8" type="ui-text-box">
+            <layout ax="659" ay="381.75" awidth="78" aheight="28" x="659" y="381.75" width="78" height="27.5" />
+          </item>
+        </layer>
+      </diagram>
+      <diagram type="user-interface" id="p0702752f02f146038b4801520a64f720_429923774" name="Schedulling window" order-index="2" overview-order-index="0" uid="" auto-routed-paths="false" default-line-style="default">
+        <size width="1" height="1" unit="px" type="ExpandableRightDown" />
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>04/10/2024 02:27:31</creation-date>
+          <change-date>04/10/2024 02:27:54</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="8ceed628ffea476c88aefc36d26b8874" cid="WND002" type="ui-window" name="Window2" creator="" creation-date="04/10/2024 02:27:54">
+            <window show-min-button="true" show-max-button="true" show-close-button="true" show-size-grip="false" />
+          </item>
+        </abstract-items>
+        <layer id="e3e6402bbabb4398bdc113f593e0e331" name="Default" visible="true" enabled="true" locked="false">
+          <item id="8ceed628ffea476c88aefc36d26b8874" iid="da545cc67c474badbf8edda92715dba6" creation-date="04/10/2024 02:27:54" order-index="0" type="ui-window">
+            <layout ax="209" ay="51" awidth="866" aheight="495" x="209" y="51" width="866" height="495" expanded="209,51,866,495" collapsed="0,0,0,0" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
