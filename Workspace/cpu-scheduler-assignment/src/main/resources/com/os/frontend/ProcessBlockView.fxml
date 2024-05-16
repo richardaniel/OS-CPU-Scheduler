@@ -9,7 +9,7 @@
 
 <VBox fx:id="processContainer" stylesheets="@ProcessBlockView.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.os.frontend.start_window.ProcessBlockController">
    <AnchorPane fx:id="anchorPane" prefHeight="49.0" prefWidth="221.0" stylesheets="@ProcessBlockView.css">
-      <Label alignment="TOP_CENTER" layoutX="2.0" layoutY="-1.0" prefHeight="61.0" prefWidth="219.0" text="Process" textFill="#222831">
+      <Label alignment="TOP_CENTER" layoutX="2.0" layoutY="-1.0" prefHeight="61.0" prefWidth="219.0" text="Proceso" textFill="#222831">
          <font>
             <Font name="Eras Bold ITC" size="50.0" />
          </font>
@@ -27,7 +27,7 @@
    </AnchorPane>
    <HBox fx:id="hBox" alignment="TOP_CENTER" fillHeight="false" prefHeight="53.0" prefWidth="221.0">
       <VBox alignment="TOP_CENTER" prefHeight="43.0" prefWidth="59.0">
-         <Label alignment="CENTER" text="Arrival" textAlignment="CENTER" textFill="#9a8d8d">
+         <Label alignment="CENTER" text="Llegada" textAlignment="CENTER" textFill="#9a8d8d">
             <font>
                <Font name="Eras Medium ITC" size="15.0" />
             </font>
@@ -35,7 +35,7 @@
          <Spinner fx:id="arrivalSpinner" onMouseReleased="#updateFields" opacity="0.6" prefHeight="25.0" prefWidth="55.0" />
       </VBox>
       <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="43.0" prefWidth="58.0">
-         <Label alignment="CENTER" prefHeight="17.0" prefWidth="47.0" text="Burst" textAlignment="CENTER" textFill="#9a8d8d">
+         <Label alignment="CENTER" prefHeight="17.0" prefWidth="47.0" text="Rafaga" textAlignment="CENTER" textFill="#9a8d8d">
             <font>
                <Font name="Eras Medium ITC" size="15.0" />
             </font>
@@ -43,7 +43,7 @@
          <Spinner fx:id="burstSpinner" onMouseReleased="#updateFields" opacity="0.6" prefHeight="25.0" prefWidth="55.0" />
       </VBox>
       <VBox fx:id="priorityBlock" alignment="TOP_CENTER" fillWidth="false" prefHeight="43.0" prefWidth="63.0">
-         <Label alignment="CENTER" prefHeight="17.0" prefWidth="47.0" text="Priority" textAlignment="CENTER" textFill="#9a8d8d">
+         <Label alignment="CENTER" prefHeight="18.0" prefWidth="66.0" text="Prioridad" textAlignment="CENTER" textFill="#9a8d8d">
             <font>
                <Font name="Eras Medium ITC" size="15.0" />
             </font>

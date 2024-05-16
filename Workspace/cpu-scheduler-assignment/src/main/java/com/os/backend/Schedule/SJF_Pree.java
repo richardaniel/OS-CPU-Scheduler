@@ -143,6 +143,6 @@ public class SJF_Pree extends SchedulingAlgo {
 
     @Override
     public String getSchedulerName() {
-        return "Preemptive Shortest Job First";
+        return "SJF Preemptivo";
     }
 }

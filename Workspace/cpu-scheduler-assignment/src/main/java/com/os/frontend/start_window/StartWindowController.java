@@ -236,10 +236,11 @@ public class StartWindowController extends StackPane implements Initializable {
         return switch (algorithm) {
             case "FCFS" -> new FCFS();
             case "Round Robin" -> new RoundRobin(this.timeQuantumSpinner.getValue());
-            case "Preemptive Priority" -> new Priority_Pree();
-            case "Non Preemptive Priority" -> new Priority_Non();
-            case "Preemptive SJF" -> new SJF_Pree();
-            case "Non Preemptive SJF" -> new SJF_Non();
+            case "Prioridad" -> new Priority_Pree();
+            case "Prioridad No Preemptivo" -> new Priority_Non();
+            case "SJF Preemptivo" -> new SJF_Pree();
+            case "SJF No Preemptivo" -> new SJF_Non();
+            case "Planificacion_Sorteo" -> new Lottery_Scheduling(100);
             default -> throw new IllegalArgumentException("Invalid algorithm: " + algorithm);
         };
     }

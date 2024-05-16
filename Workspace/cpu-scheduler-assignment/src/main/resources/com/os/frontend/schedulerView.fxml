@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 
 <VBox fx:id="SchedularContainer" alignment="TOP_CENTER" prefHeight="800.0" prefWidth="1300.0" stylesheets="@../../../stylesheets/schedularViewStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.os.frontend.scheduling_window.components.SchedulerWindow">
-   <Label fx:id="CPUScheduler" text="CPU Scheduler" textFill="#d7d7d7">
+   <Label fx:id="CPUScheduler" text="CPU Task Manager" textFill="#d7d7d7">
       <font>
          <Font name="Eras Medium ITC" size="48.0" />
       </font>
@@ -35,19 +35,19 @@
          <Insets bottom="20.0" top="20.0" />
       </VBox.margin></HBox>
    <HBox fx:id="addProcessBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
-      <Label text="Add Process Live:" textFill="#76abae">
+      <Label text="Agregar proceso en vivo :" textFill="#76abae">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </Label>
       <Region prefHeight="200.0" prefWidth="20.0" />
-      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="10.0" style="-fx-background-color: #31363f; -fx-border-radius: 0 10 10 0; -fx-background-radius: 0 10 10 0;">
-         <Button fx:id="addButton" mnemonicParsing="false" onAction="#addNewProcessToBackEnd" styleClass="button-class" text="Add">
+      <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="137.0" spacing="10.0" style="-fx-background-color: #31363f; -fx-border-radius: 0 10 10 0; -fx-background-radius: 0 10 10 0;">
+         <Button fx:id="addButton" mnemonicParsing="false" onAction="#addNewProcessToBackEnd" styleClass="button-class" text="Agregar">
             <font>
                <Font size="15.0" />
             </font>
          </Button>
-         <Button mnemonicParsing="false" onAction="#resetProcessBlock" styleClass="button-class" text="reset">
+         <Button mnemonicParsing="false" onAction="#resetProcessBlock" prefHeight="44.0" prefWidth="99.0" styleClass="button-class" text="Reiniciar">
             <font>
                <Font size="15.0" />
             </font>
@@ -60,7 +60,7 @@
          </padding>
       </VBox>
       <VBox fx:id="timerBox" alignment="CENTER" prefHeight="100.0" prefWidth="174.0">
-         <Label fx:id="TimeId" text="TIME">
+         <Label fx:id="TimeId" text="TIEMPO">
             <font>
                <Font name="System Bold" size="20.0" />
             </font>
@@ -71,9 +71,9 @@
             </font>
          </Label>
       </VBox>
-      <ToggleButton fx:id="startStopButton" mnemonicParsing="false" onAction="#startStop" styleClass="button-class" text="Pause" />
+      <ToggleButton fx:id="startStopButton" mnemonicParsing="false" onAction="#startStop" styleClass="button-class" text="Pausar" />
       <Region prefHeight="100.0" prefWidth="20.0" />
-      <ToggleButton fx:id="startStopButton1" mnemonicParsing="false" onAction="#restartApp" styleClass="restart-button" text="Restart the app" />
+      <ToggleButton fx:id="startStopButton1" mnemonicParsing="false" onAction="#restartApp" styleClass="restart-button" text="Reiniciar App" />
       <VBox.margin>
          <Insets top="50.0" />
       </VBox.margin>

@@ -15,19 +15,19 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="tableContainerCss" stylesheets="@../../../stylesheets/ProcessTableView.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.os.frontend.scheduling_window.observers.ProcessesTable">
+<VBox fx:id="tableContainerCss" prefHeight="422.0" prefWidth="623.0" stylesheets="@../../../stylesheets/ProcessTableView.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.os.frontend.scheduling_window.observers.ProcessesTable">
     <padding>
         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
     </padding>
     <TableView fx:id="table" prefHeight="239.0" prefWidth="589.0" styleClass="table">
       <columns>
-          <TableColumn fx:id="stateColumn" editable="false" prefWidth="46.0" text="State" />
-          <TableColumn fx:id="processColumn" editable="false" prefWidth="53.0" text="Process" />
-          <TableColumn fx:id="arrivalColumn" editable="false" text="Arrival" />
-          <TableColumn fx:id="burstColumn" editable="false" prefWidth="67.0" text="Burst" />
-          <TableColumn fx:id="remainingColumn" editable="false" prefWidth="102.0" text="Remaining" />
-          <TableColumn fx:id="_TAColumn" editable="false" prefWidth="109.0" text="Turnaround" />
-          <TableColumn fx:id="waitingColumn" editable="false" prefWidth="87.0" text="Waiting" />
+          <TableColumn fx:id="stateColumn" editable="false" prefWidth="46.0" text="Estado" />
+          <TableColumn fx:id="processColumn" editable="false" prefWidth="53.0" text="Proceso" />
+          <TableColumn fx:id="arrivalColumn" editable="false" text="Llegada" />
+          <TableColumn fx:id="burstColumn" editable="false" prefWidth="67.0" text="Rafaga" />
+          <TableColumn fx:id="remainingColumn" editable="false" prefWidth="102.0" text="T. Restante" />
+          <TableColumn fx:id="_TAColumn" editable="false" prefWidth="109.0" text="T. Respuesta" />
+          <TableColumn fx:id="waitingColumn" editable="false" prefWidth="87.0" text="T. Espera" />
       </columns>
       <columnResizePolicy>
          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -68,7 +68,7 @@
                   </stops>
                </LinearGradient>
             </fill></Rectangle>
-            <Label text="Arrived">
+            <Label text="Listo">
                 <font>
                     <Font size="14.0" />
                 </font>
@@ -87,7 +87,7 @@
                 <Insets left="5.0" />
             </padding>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="PEACHPUFF" height="21.0" stroke="BLACK" strokeType="INSIDE" width="23.0" />
-            <Label text="Started">
+            <Label text="Iniciado">
                 <font>
                     <Font size="14.0" />
                 </font>
@@ -98,7 +98,7 @@
                 <Insets left="5.0" />
             </padding>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="21.0" stroke="BLACK" strokeType="INSIDE" width="23.0" />
-            <Label text="Interrupted">
+            <Label text="Interrumpido">
                 <font>
                     <Font size="14.0" />
                 </font>
@@ -109,7 +109,7 @@
                 <Insets left="5.0" />
             </padding>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="LIME" height="21.0" stroke="BLACK" strokeType="INSIDE" width="23.0" />
-            <Label text="Running">
+            <Label text="En Ejecucion">
                 <font>
                     <Font size="14.0" />
                 </font>
@@ -120,7 +120,7 @@
                 <Insets left="5.0" />
             </padding>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cccccc" height="21.0" stroke="BLACK" strokeType="INSIDE" width="23.0" />
-            <Label text="Pending">
+            <Label text="Pendiente">
                 <font>
                     <Font size="14.0" />
                 </font>
@@ -131,7 +131,7 @@
                 <Insets left="5.0" />
             </padding>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="21.0" stroke="BLACK" strokeType="INSIDE" width="23.0" />
-            <Label text="Completed">
+            <Label text="Completado">
                 <font>
                     <Font size="14.0" />
                 </font>
@@ -140,7 +140,7 @@
     </GridPane>
     <HBox fx:id="importantBox" alignment="CENTER" prefHeight="50.0" prefWidth="589.0" spacing="40.0">
         <HBox alignment="CENTER" styleClass="importantBoxChild">
-            <Label text="Average waiting: " textFill="#76abae">
+            <Label text=" Tiempo Espera Promedio: " textFill="#76abae">
                 <font>
                     <Font name="System Bold" size="16.0" />
                 </font>
@@ -152,7 +152,7 @@
             </Label>
         </HBox>
         <HBox alignment="CENTER" styleClass="importantBoxChild">
-            <Label text="Average turnaround: " textFill="#76abae">
+            <Label text="Tiempo Retorno Promedio: " textFill="#76abae">
                 <font>
                     <Font name="System Bold" size="16.0" />
                 </font>

@@ -9,10 +9,10 @@
    <children>
     <BarChart fx:id="barChart" layoutX="50.0" layoutY="49.0" prefHeight="390.0" prefWidth="587.0" style="-fx-background-color: #1c1c1c; -fx-color: #156578;" stylesheets="@../../../stylesheets/schedulerViewStylesheet.css">
         <xAxis>
-            <CategoryAxis autoRanging="false" endMargin="0.5" label="Processes" startMargin="1.0" tickLabelFill="WHITE" tickLabelGap="0.0" tickLength="5.0" fx:id="xAxis" />
+            <CategoryAxis autoRanging="false" endMargin="0.5" label="Procesos" startMargin="1.0" tickLabelFill="WHITE" tickLabelGap="0.0" tickLength="5.0" fx:id="xAxis" />
         </xAxis>
         <yAxis>
-            <NumberAxis fx:id="yAxis" label="Remaining Time" side="LEFT" tickLabelFill="WHITE" />
+            <NumberAxis fx:id="yAxis" label="Tiempo Restante" side="LEFT" tickLabelFill="WHITE" />
         </yAxis>
     </BarChart>
     </children>

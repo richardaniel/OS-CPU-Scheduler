@@ -47,7 +47,7 @@ public class SchedulerViewController implements Initializable {
     private TableColumn<Process, Integer> remainingColumn;
 
     @FXML
-    private Label CPU_Task_Manager;
+    private Label CPUScheduler;
     @FXML
     private BarChart<String, Integer> barChart;
     XYChart.Series<String, Integer> processSeries = new XYChart.Series<>();
@@ -135,8 +135,8 @@ public class SchedulerViewController implements Initializable {
 
     ///////////////////////////////////////Adding a category instead of a series
     private void initializeChart() {
-        xAxis.setLabel("Processes");
-        yAxis.setLabel("Burst Time");
+        xAxis.setLabel("Procesos");
+        yAxis.setLabel("Tiempo de rafaga");
         String labelStyle = "-fx-text-fill: #76ABAE;";
         xAxis.setStyle(labelStyle);
         yAxis.setStyle(labelStyle);
@@ -309,12 +309,12 @@ public class SchedulerViewController implements Initializable {
         // Add the StackPane to the ganttBox
         ganttBox.getChildren().add(box);
 
-        //عشان خاطر اسلام
+        
         ganttBox.setPrefWidth(ganttBox.getPrefWidth() + 9);
         double viewValue = (double) (ganttBox.getChildren().size() * 75 + 250) / 1060;
 
 
-        //سيب دي عشان انا فلاح
+        
         scrolViewChange();
 
     }

@@ -35,7 +35,7 @@ public class Barchart implements Initializable {
     );
     private void initializeChart() {
         xAxis.setLabel("Procesos");
-        yAxis.setLabel("Burst Time");
+        yAxis.setLabel("Tiempo de Rafaga");
 
         // Create a list to store the categories
         ObservableList<String> categories = FXCollections.observableArrayList();

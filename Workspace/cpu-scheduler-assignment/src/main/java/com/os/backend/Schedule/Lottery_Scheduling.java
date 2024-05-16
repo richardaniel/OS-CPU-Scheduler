@@ -1,37 +1,42 @@
 package com.os.backend.Schedule;
 
-import com.os.backend.Process.PriorityProcess;
 import com.os.backend.Process.Process;
 import com.os.backend.Process.ProcessState;
 import com.os.backend.Process.ProcessTable;
+import com.os.backend.Schedule.SchedulingAlgo;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
-import java.util.PriorityQueue;
+import java.util.Random;
 import java.util.stream.Collectors;
 
-public class Priority_Pree extends SchedulingAlgo {
+public class Lottery_Scheduling extends SchedulingAlgo {
+    private final int totalTickets;
+    private List<Process> clonedProcesses;
+    private final Random random;
 
-    List<PriorityProcess> clonedProcesses;
-
-    public Priority_Pree() {
+    public Lottery_Scheduling(int totalTickets) {
+        this.totalTickets = totalTickets;
+        this.random = new Random();
         cloneProcessList();
     }
 
     @Override
     public ProcessTable execute() {
         ProcessTable table = new ProcessTable();
-        PriorityQueue<PriorityProcess> queue = new PriorityQueue<>();
         int time = 0;
-        PriorityProcess prevPriority = null;
-        while (!clonedProcesses.isEmpty() || !queue.isEmpty()) {
+        List<Process> queue = new LinkedList<>();
+        int counter = 0;
+
+        while (!queue.isEmpty() || !this.clonedProcesses.isEmpty()) {
             /*to be used in lambda expressions*/
             final int currentTime = time;
             //----------------------------------------------------------------
             //arrived processes
             //get the arrived process list
-            List<PriorityProcess> arrivedProcesses = this.clonedProcesses.stream()
-                    .filter(process -> process.getArrivalTime() == currentTime)
+            List<Process> arrivedProcesses = this.clonedProcesses.stream()
+                    .filter(process -> process.getArrivalTime() <= currentTime)
                     .toList();
             //remove them from the clonedList
             this.clonedProcesses.removeAll(arrivedProcesses);
@@ -48,31 +53,26 @@ public class Priority_Pree extends SchedulingAlgo {
             //----------------------------------------------------------------
             // the running process
             if (!queue.isEmpty()) {
-                PriorityProcess runningProcess = queue.remove();
-                PriorityProcess runningProcessToAdd = (PriorityProcess) this.processesList.get(this.processesList.indexOf(runningProcess));
+                int selectedTicket = random.nextInt(totalTickets) + 1;
+                Process runningProcess = queue.stream()
+                        .filter(process -> process.getTickets() >= selectedTicket)
+                        .findFirst()
+                        .orElse(queue.get(0));
 
-                if (runningProcess != prevPriority) {
+                Process runningProcessToAdd = this.processesList.get(this.processesList.indexOf(runningProcess));
+
+                if (counter == 0) {
                     //called for the first time --> add to table as started
                     table.addExecutionEvent(runningProcessToAdd, currentTime, runningProcessToAdd.getProcessNumber(), ProcessState.STARTED);
-                    //if the prev process remaining time != 0, then it was interrupted
-                    if (prevPriority != null) {
-                        if (prevPriority.getRemainingTime() != 0) {
-                            PriorityProcess prevProcessToAdd = (PriorityProcess) this.processesList.get(this.processesList.indexOf(prevPriority));
-                            table.addExecutionEvent(prevProcessToAdd, time, prevProcessToAdd.getProcessNumber(), ProcessState.INTERRUPTED);
-                        }
-                    }
                 } else {
                     // add the process as running
                     table.addExecutionEvent(runningProcessToAdd, currentTime, runningProcessToAdd.getProcessNumber(), ProcessState.RUNNING);
                 }
 
-
                 //----------------------------------------------------------------
                 //waiting processes
                 // add waiting (in queue) non-arrived processes to the table as Ready
-                /*for lambda usage*/
-                final PriorityProcess p = prevPriority;
-                queue.stream().filter(process -> !arrivedProcesses.contains(process) && !process.equals(runningProcess) && !process.equals(p)).
+                queue.stream().filter(process -> !arrivedProcesses.contains(process) && !process.equals(runningProcess)).
                         forEach(process -> {
                             Process toAdd = this.processesList.get(this.processesList.indexOf(process));
                             table.addExecutionEvent(toAdd, currentTime, toAdd.getProcessNumber(), ProcessState.READY);
@@ -80,24 +80,25 @@ public class Priority_Pree extends SchedulingAlgo {
 
                 //----------------------------------------------------------------
                 //update Variables
+
+                //update counter
+                counter = (counter + 1) % this.totalTickets;
                 //update the remaining time of the current running process
                 runningProcess.decrementRemainingTime();
-
-                //set the prev process to the current one
-                prevPriority = runningProcess;
-
-                //if the running process's remaining time == 0, then it is completed
+                
+                // if the remaining time of the current running process becomes zero,
+                // then it's done, and remove it from the queue
+                // and add it to the table as completed
                 if (runningProcess.getRemainingTime() == 0) {
+                    queue.remove(runningProcess);
                     table.addExecutionEvent(runningProcessToAdd, time + 1, runningProcessToAdd.getProcessNumber(), ProcessState.COMPLETED);
-                } else {
-                    //else reAdd it to the queue
-                    queue.add(runningProcess);
+                    counter = 0;
                 }
-
             }
             //update time
             time++;
         }
+
         return table;
     }
 
@@ -110,35 +111,36 @@ public class Priority_Pree extends SchedulingAlgo {
     // Helper methods
     private void cloneProcessList() {
         this.clonedProcesses = processesList.stream()
-                .map(process -> ((PriorityProcess) process).clone())
+                .map(Process::clone)
                 .collect(Collectors.toList());
     }
 
-    /***
+    /**
      * For testing
      */
     public static void main(String[] args) {
-// Create some sample processes
-        List<Process> processes = new ArrayList<>();
-        processes.add(new PriorityProcess(1, 0, 5, 2));
-        processes.add(new PriorityProcess(2, 2, 3, 1));
-        processes.add(new PriorityProcess(3, 4, 4, 3));
+        // Create a list of processes for testing
+        List<Process> testProcessesList = new ArrayList<>();
+       
 
-        // Create an instance of Priority_Pree
-        Priority_Pree scheduler = new Priority_Pree();
+        // Total tickets in the system (can be adjusted based on total tickets of all processes)
+        int totalTickets = testProcessesList.stream().mapToInt(Process::getTickets).sum();
 
-        // Set the list of processes
-        scheduler.addNewProcesses(processes);
+        // Create a LotteryScheduling scheduling algorithm with total tickets
+        Lottery_Scheduling lotteryScheduling = new Lottery_Scheduling(totalTickets);
 
-        // Execute the scheduler
-        ProcessTable table = scheduler.execute();
+        // Set the processes list
+        lotteryScheduling.addNewProcesses(testProcessesList);
 
-        // Print the process table
-        System.out.println(table);
+        // Execute the scheduling algorithm
+        ProcessTable processTable = lotteryScheduling.execute();
+
+        // Print the process table to observe the execution events
+        System.out.println(processTable);
     }
 
     @Override
     public String getSchedulerName() {
-        return "Prioridad";
+        return "Planificador por sorteo ";
     }
 }

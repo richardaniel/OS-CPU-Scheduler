@@ -15,7 +15,7 @@
 
 <VBox prefHeight="638.0" prefWidth="1150.0" stylesheets="@StartWindowView.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.os.frontend.start_window.StartWindowController">
    <StackPane prefHeight="176.0" prefWidth="1217.0">
-      <Label fx:id="CPUScheduler" text="CPU Scheduler" textFill="#d7d7d7">
+      <Label fx:id="CPUScheduler" text="CPU Task Manger" textFill="#d7d7d7">
          <font>
             <Font name="Eras Medium ITC" size="86.0" />
          </font>
@@ -23,7 +23,7 @@
    </StackPane>
    <HBox fx:id="processListHBox" alignment="TOP_CENTER" spacing="30.0">
       <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="335.0" prefWidth="800.0" stylesheets="@StartWindowView.css">
-         <FlowPane fx:id="processesList" hgap="10.0" prefHeight="326.0" prefWidth="796.0" stylesheets="@StartWindowView.css" vgap="10.0">
+         <FlowPane fx:id="processesList" hgap="10.0" prefHeight="408.0" prefWidth="800.0" stylesheets="@StartWindowView.css" vgap="10.0">
             <Button fx:id="plusButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMousePressed="#addNewProcess" prefHeight="120.0" prefWidth="245.0" text="+">
                <font>
                   <Font size="50.0" />
@@ -33,8 +33,8 @@
             </padding>
          </FlowPane>
       </ScrollPane>
-      <VBox alignment="TOP_CENTER" prefHeight="245.0" prefWidth="261.0" spacing="15.0">
-         <Label fx:id="schedulingAlgorithmsLabel" text="Scheduling Algorithm" textFill="#cdcdcd">
+      <VBox alignment="TOP_CENTER" prefHeight="459.0" prefWidth="261.0" spacing="15.0">
+         <Label fx:id="schedulingAlgorithmsLabel" text="Algoritmo de planificacion" textFill="#cdcdcd">
             <font>
                <Font size="24.0" />
             </font>
@@ -51,19 +51,23 @@
             <font>
                <Font size="14.0" />
             </font></ToggleButton>
-         <ToggleButton layoutX="96.0" layoutY="167.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hidePriorityOnProcesses" onMouseClicked="#hideQuantumSpinner" text="Preemptive SJF" textAlignment="CENTER" toggleGroup="$toggleGroup1">
+         <ToggleButton layoutX="96.0" layoutY="167.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hidePriorityOnProcesses" onMouseClicked="#hideQuantumSpinner" text="SJF Preemptivo" textAlignment="CENTER" toggleGroup="$toggleGroup1">
             <font>
                <Font size="14.0" />
             </font></ToggleButton>
-         <ToggleButton layoutX="96.0" layoutY="192.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hidePriorityOnProcesses" onMouseClicked="#hideQuantumSpinner" text="Non Preemptive SJF" textAlignment="CENTER" toggleGroup="$toggleGroup1">
+         <ToggleButton layoutX="96.0" layoutY="192.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#hidePriorityOnProcesses" onMouseClicked="#hideQuantumSpinner" text="SJF No Preemptivo" textAlignment="CENTER" toggleGroup="$toggleGroup1">
             <font>
                <Font size="14.0" />
             </font></ToggleButton>
-         <ToggleButton layoutX="96.0" layoutY="142.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showPriorityOnProcesses" onMouseClicked="#hideQuantumSpinner" text="Preemptive Priority" textAlignment="CENTER" toggleGroup="$toggleGroup1">
+         <ToggleButton layoutX="96.0" layoutY="142.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showPriorityOnProcesses" onMouseClicked="#hideQuantumSpinner" text="Prioridad" textAlignment="CENTER" toggleGroup="$toggleGroup1">
             <font>
                <Font size="14.0" />
             </font></ToggleButton>
-         <ToggleButton layoutX="96.0" layoutY="167.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showPriorityOnProcesses" onMouseClicked="#hideQuantumSpinner" text="Non Preemptive Priority" textAlignment="CENTER" toggleGroup="$toggleGroup1">
+         <ToggleButton layoutX="96.0" layoutY="167.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showPriorityOnProcesses" onMouseClicked="#hideQuantumSpinner" text="Prioridad No Preemptivo" textAlignment="CENTER" toggleGroup="$toggleGroup1">
+            <font>
+               <Font size="14.0" />
+            </font></ToggleButton>
+         <ToggleButton layoutX="96.0" layoutY="167.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showPriorityOnProcesses" onMouseClicked="#hideQuantumSpinner" text="Planificacion_Sorteo" textAlignment="CENTER" toggleGroup="$toggleGroup1">
             <font>
                <Font size="14.0" />
             </font></ToggleButton>
@@ -73,17 +77,17 @@
       </VBox>
    </HBox>
    <HBox fx:id="controlButtons" alignment="CENTER" prefHeight="129.0" prefWidth="1070.0" spacing="30.0">
-      <Button fx:id="confirmButton" mnemonicParsing="false" onAction="#createProcesses" prefHeight="60.0" prefWidth="140.0" styleClass="button-class" text="Confirm">
+      <Button fx:id="confirmButton" mnemonicParsing="false" onAction="#createProcesses" prefHeight="60.0" prefWidth="140.0" styleClass="button-class" text="Confirmar">
          <font>
             <Font size="22.0" />
          </font></Button>
-      <Button mnemonicParsing="false" onMouseClicked="#resetProcessList" prefHeight="60.0" prefWidth="140.0" styleClass="button-class" text="Reset">
+      <Button mnemonicParsing="false" onMouseClicked="#resetProcessList" prefHeight="60.0" prefWidth="140.0" styleClass="button-class" text="Reiniciar">
          <font>
             <Font size="22.0" />
          </font></Button>
       <VBox fx:id="priorityBlock" alignment="TOP_CENTER" minHeight="-Infinity" prefHeight="100.0" prefWidth="100.0">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="114.0" text="Q Time" textAlignment="CENTER" textFill="#cdcdcd">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="114.0" text="Q" textAlignment="CENTER" textFill="#cdcdcd">
                <font>
                   <Font size="18.0" />
                </font>

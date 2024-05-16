@@ -82,9 +82,9 @@ public class Bar extends AnchorPane implements Observer, Initializable {
                 dataToUpdate.setYValue(currentRunningProcess.getRemainingTime());
             }
 
-            System.out.println("APOLO");
+            System.out.println("Fabri");
         }
-        else System.out.println("KALOLO");
+        else System.out.println("Brayan");
     }
 
     private void updateChartWithNewProcess(Process process) {

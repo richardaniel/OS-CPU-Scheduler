@@ -13,7 +13,7 @@ public class Process implements Cloneable{
     private int remainingTime;
     private int turnaroundTime;
     private int waitingTime;
-
+    private int Tickets;
 
     public Process(int processNumber, int arrivalTime, int burstTime) {
         this.processNumber = processNumber;
@@ -21,6 +21,16 @@ public class Process implements Cloneable{
         this.burstTime = burstTime;
         this.remainingTime = burstTime;
     }
+
+    public void setTickets(int Tickets) {
+        this.Tickets = Tickets;
+    }
+
+    public int getTickets() {
+        return Tickets;
+    }
+    
+    
 
     public Process() {
         this(0, 0, 1);
@@ -119,6 +129,8 @@ public class Process implements Cloneable{
         Process process = (Process) o;
         return processNumber == process.processNumber && arrivalTime == process.arrivalTime && burstTime == process.burstTime;
     }
+
+
 
 
 }

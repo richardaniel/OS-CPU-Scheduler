@@ -109,6 +109,6 @@ public class SJF_Non extends SchedulingAlgo {
 
     @Override
     public String getSchedulerName() {
-        return "Non-Preemptive Shortest Job First";
+        return "SJF No Preemptivo";
     }
 }
